@@ -241,7 +241,16 @@ h2.text-left { text-align: left; }
   background-color: rgba(242,232,220,0.13);
 }
 .cta-form-btn { width: 100%; }
-.form-success { color: var(--heading-color); font-family: var(--font-heading); font-size: 1.4rem; text-align: center; padding: 2rem 0; }
+.form-success {
+  background: #F2E8DC;
+  color: var(--heading-color);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+}
 .form-error { color: #c0392b; font-size: 0.9rem; text-align: center; margin-top: 0.75rem; }
 .gdpr-consent {
   display: flex;
