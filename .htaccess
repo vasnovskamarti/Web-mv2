@@ -1,0 +1,6 @@
+# Zamezení načítání do rámců cizích domén
+Header always append X-Frame-Options SAMEORIGIN
+# Ochrana proti XSS
+Header set X-XSS-Protection "1; mode=block"
+
+ErrorDocument 404 /404.html

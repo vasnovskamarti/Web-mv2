@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="c">
+      <rect width="100" height="100" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="18" fill="#3D2210"/>
+
+  <!-- Logo PNG — posunuto tak, aby byl vidět pouze myš (pravá část loga) -->
+  <image href="Obrazky/logo.png"
+         x="-158" y="-5"
+         width="270" height="117"
+         clip-path="url(#c)"
+         preserveAspectRatio="none"/>
+</svg>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Martina Vašnovská</title>
+    <meta name="description" content="Blog Martiny Vašnovské – věci z cest, z práce i ze života. O online podnikání, webech a svobodě dělat věci po svém.">
+
+    <meta property="og:title" content="Blog - Martina Vašnovská">
+    <meta property="og:description" content="Píšu si věci, které nechci zapomenout. Z cest, z práce i ze života.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.martinavasnovska.cz/blog.html">
+    <meta property="og:image" content="https://www.martinavasnovska.cz/Obrazky/hero.jpg">
+    <link rel="canonical" href="https://www.martinavasnovska.cz/blog.html">
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png?v=6">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog – Martina Vašnovská",
+      "url": "https://www.martinavasnovska.cz/blog.html",
+      "author": {
+        "@type": "Person",
+        "name": "Martina Vašnovská"
+      }
+    }
+    </script>
+</head>
+<body class="light-bg">
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Obrazky/logo.png" alt="Martina Vašnovská - Logo">
+                </a>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="ukazky.html">Ukázky práce</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                    <li><a href="omne.html">O&nbsp;mně</a></li>
+                    <li><a href="blog.html" class="nav-active">Blog</a></li>
+                </ul>
+                <a href="#kontakt" class="btn-nav-cta">Pojďme na to</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="section-label fade-in">Zápisky z cesty</span>
+                <h1 class="page-hero-title fade-in">Blog</h1>
+                <p class="page-hero-perex fade-in">Píšu si věci, které nechci zapomenout.<br>Z&nbsp;cest, z&nbsp;práce i&nbsp;ze života.</p>
+            </div>
+        </section>
+
+        <!-- BLOG PŘIPRAVUJEME -->
+        <section class="section-sm" style="padding-top:1.5rem;">
+            <div class="container">
+                <div class="fade-in" style="max-width:640px; margin:0 auto; text-align:center; padding:0 0 3rem;">
+
+                    <div style="font-size:1.9rem; color:var(--accent); margin-bottom:1.5rem;">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+
+                    <h2 style="font-size:clamp(1.8rem,4vw,2.8rem); margin-bottom:1.25rem;">Blog se zatím připravuje</h2>
+
+                    <p style="color:var(--text-muted); font-size:1.1rem; max-width:44ch; margin:0 auto 2.5rem; line-height:1.85;">Brzy tu najdete zápisky o&nbsp;online podnikání, webech, cestování i&nbsp;tom, jak dělat věci chytře – bez zbytečného chaosu.</p>
+
+                    <a href="index.html" class="btn btn-outline">
+                        <i class="fa-solid fa-arrow-left" style="margin-right:0.5rem;"></i> Zpátky na hlavní stránku
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <!-- KONTAKT -->
+        <section id="kontakt" class="cta-banner">
+            <div class="container">
+                <span class="section-label cta-label">Kontakt</span>
+                <h2>Připravena začít?</h2>
+                <p>Napište mi a&nbsp;podíváme se na to spolu.<br>Bez závazků, s&nbsp;konkrétním výstupem.</p>
+                <form class="cta-form" action="https://formspree.io/f/xwvrdayj" method="POST">
+                    <div class="cta-form-row">
+                        <input type="text" name="jmeno" placeholder="Vaše jméno" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <textarea name="zprava" rows="4" placeholder="O čem si chcete popovídat?" required></textarea>
+                    <button type="submit" class="btn btn-light btn-lg cta-form-btn">Odeslat zprávu</button>
+                </form>
+                <div class="cta-contact-meta">
+                    <a href="tel:+420724540632"><i class="fa-solid fa-phone"></i> +420 724 540 632</a>
+                    <a href="https://www.facebook.com/ToulavaMartjula" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+
+                <div class="footer-col footer-brand">
+                    <p style="color:var(--heading-color); font-weight:600; font-size:1rem;">Martina Vašnovská</p>
+                    <p class="footer-slogan">„Pomáhám podnikatelům nastavit online podnikání tak, aby fungovalo, vydělávalo a&nbsp;nechávalo jim prostor na život."</p>
+                    <img src="Obrazky/hero.jpg" alt="Martina Vašnovská" class="footer-photo" loading="lazy">
+                </div>
+
+                <div class="footer-col">
+                    <h4>Fakturační údaje</h4>
+                    <p><strong style="color:var(--heading-color);">Martina Vašnovská</strong></p>
+                    <p>IČ: 86928783</p>
+                    <p>Magistrát města Ostravy</p>
+                    <p style="margin-top:0.6rem;">Ahepjukova 2796/27</p>
+                    <p>702 00 Ostrava – Moravská Ostrava</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:virtualni@martinavasnovska.cz">virtualni@martinavasnovska.cz</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+420724540632">+420 724 540 632</a>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ToulavaMartjula" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Důležité odkazy</h4>
+                    <ul class="footer-nav">
+                        <li><a href="vop.html">Všeobecné obchodní podmínky</a></li>
+                        <li><a href="gdpr.html">Ochrana osobních údajů (GDPR)</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Martina Vašnovská</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
