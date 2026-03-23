@@ -54,9 +54,10 @@ img { display: block; max-width: 100%; }
 }
 
 .skip-link {
-  position: absolute;
-  top: -50px;
+  position: fixed;
+  top: 0;
   left: 0;
+  transform: translateY(-100%);
   background: var(--primary);
   color: #fff;
   padding: 0.6rem 1.2rem;
@@ -64,9 +65,9 @@ img { display: block; max-width: 100%; }
   font-weight: 600;
   text-decoration: none;
   border-radius: 0 0 var(--radius-sm) 0;
-  transition: top 0.2s;
+  transition: transform 0.2s;
 }
-.skip-link:focus { top: 0; }
+.skip-link:focus { transform: translateY(0); }
 
 /* ============================================================
    Typography
