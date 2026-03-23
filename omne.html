@@ -10,8 +10,14 @@
     <meta property="og:description" content="Webařka a virtuální asistentka. Pomáhám poskládat online podnikání tak, aby fungovalo jednoduše, logicky a funkčně.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.martinavasnovska.cz/omne">
-    <meta property="og:image" content="https://www.martinavasnovska.cz/Obrazky/omne.jpg">
+    <meta property="og:image" content="https://www.martinavasnovska.cz/Obrazky/hero.jpg">
+    <meta property="og:image:width" content="1105">
+    <meta property="og:image:height" content="1658">
+    <meta property="og:locale" content="cs_CZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.martinavasnovska.cz/Obrazky/hero.jpg">
     <link rel="canonical" href="https://www.martinavasnovska.cz/omne">
+    <meta name="robots" content="index, follow">
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png?v=6">
@@ -23,6 +29,7 @@
     <link rel="stylesheet" href="style.css?v=20260323b">
 </head>
 <body class="light-bg">
+    <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
 
     <!-- HEADER -->
     <header>
@@ -41,15 +48,16 @@
                     <li><a href="sluzby.html">Služby</a></li>
                     <li><a href="ukazky.html">Ukázky práce</a></li>
                     <li><a href="reference.html">Reference</a></li>
-                    <li><a href="omne.html" class="active">O mně</a></li>
+                    <li><a href="omne.html" class="nav-active">O&nbsp;mně</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li class="nav-cta-mobile"><a href="#kontakt" class="btn-nav-cta">Domluvit konzultaci</a></li>
                 </ul>
                 <a href="#kontakt" class="btn-nav-cta">Domluvit konzultaci</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
 
         <!-- INTRO + PŘÍBĚH — sloučeno -->
         <section class="omne-intro">
@@ -58,13 +66,14 @@
                     <div class="omne-intro-text">
                         <span class="section-label">O mně</span>
                         <h1>Jsem Martina.</h1>
-                        <p class="omne-lead">Pomáhám podnikatelům dát jejich online podnikání dohromady tak, aby fungovalo jako celek – ne jako slepenec nástrojů.</p>
                         <div class="omne-story-text">
-                            <p>Vždycky mě bavilo, když věci fungují tak, jak mají. Když na sebe navazují a&nbsp;dávají smysl – bez zbytečného přemýšlení.</p>
-                            <p>Jenže realita online podnikání vypadá jinak.</p>
-                            <p class="omne-story-punch">Web tady. E-mailing tam. Prodej zvlášť.<br>A&nbsp;všechno ručně.</p>
-                            <p>Místo systému vzniká chaos.</p>
-                            <p>Tohle jsem chtěla změnit. Nejdřív u&nbsp;sebe. A&nbsp;pak i&nbsp;u&nbsp;ostatních.</p>
+                            <p>Nemám ráda věci, které nefungují.<br>A&nbsp;už vůbec ne ty, které jsou zbytečně složité.</p>
+                            <p>Vždycky vidím věci v&nbsp;kontextu.</p>
+                            <p class="omne-story-punch">Jak do sebe zapadají.<br>Jak na sebe navazují.<br>A&nbsp;jak mají fungovat dohromady.</p>
+                            <p>O&nbsp;to víc mi nedávalo smysl, jak často je online podnikání poskládané.</p>
+                            <p>Web zvlášť. E-maily zvlášť. Prodej zvlášť.</p>
+                            <p>Přitom to jde i&nbsp;jednoduše.</p>
+                            <p>A&nbsp;přesně tohle jsem chtěla změnit.<br>Nejdřív u&nbsp;sebe. A&nbsp;pak i&nbsp;u&nbsp;ostatních.</p>
                             <div class="about-statement">Pomáhám podnikatelům poskládat jejich online podnikání tak, aby fungovalo jako celek.<br>Jednoduše. Logicky. Bez chaosu.</div>
                         </div>
                     </div>
@@ -140,10 +149,13 @@
                 <p>Napište mi a&nbsp;podíváme se na to spolu.<br>Bez závazků, s&nbsp;konkrétním výstupem.</p>
                 <form class="cta-form" action="https://formspree.io/f/xwvrdayj" method="POST">
                     <div class="cta-form-row">
-                        <input type="text" name="jmeno" placeholder="Vaše jméno" required>
-                        <input type="email" name="email" placeholder="E-mail" required>
+                        <label class="sr-only" for="jmeno-cta">Vaše jméno</label>
+                        <input type="text" id="jmeno-cta" name="jmeno" placeholder="Vaše jméno" required>
+                        <label class="sr-only" for="email-cta">E-mail</label>
+                        <input type="email" id="email-cta" name="email" placeholder="E-mail" required>
                     </div>
-                    <textarea name="zprava" rows="4" placeholder="O čem si chcete popovídat?" required></textarea>
+                    <label class="sr-only" for="zprava-cta">O čem si chcete popovídat?</label>
+                    <textarea id="zprava-cta" name="zprava" rows="4" placeholder="O čem si chcete popovídat?" required></textarea>
                     <button type="submit" class="btn btn-light btn-lg cta-form-btn">Chci se domluvit</button>
                 </form>
                 <div class="cta-contact-meta">

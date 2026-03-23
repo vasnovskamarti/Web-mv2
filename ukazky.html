@@ -11,7 +11,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.martinavasnovska.cz/ukazky">
     <meta property="og:image" content="https://www.martinavasnovska.cz/Obrazky/hero.jpg">
+    <meta property="og:image:width" content="1105">
+    <meta property="og:image:height" content="1658">
+    <meta property="og:locale" content="cs_CZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.martinavasnovska.cz/Obrazky/hero.jpg">
     <link rel="canonical" href="https://www.martinavasnovska.cz/ukazky">
+    <meta name="robots" content="index, follow">
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png?v=6">
@@ -23,6 +29,7 @@
     <link rel="stylesheet" href="style.css?v=20260323b">
 </head>
 <body class="light-bg">
+    <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
 
     <!-- HEADER -->
     <header>
@@ -43,13 +50,14 @@
                     <li><a href="reference.html">Reference</a></li>
                     <li><a href="omne.html">O mně</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li class="nav-cta-mobile"><a href="#kontakt" class="btn-nav-cta">Domluvit konzultaci</a></li>
                 </ul>
                 <a href="#kontakt" class="btn-nav-cta">Domluvit konzultaci</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
 
         <!-- PAGE HERO -->
         <section class="page-hero">
@@ -74,7 +82,7 @@
                     </div>
                     <div class="cs-text-col">
                         <span class="cs-tag">práce s tělem, myslí a přírodou</span>
-                        <h3 class="cs-name">Eva Mařicová</h3>
+                        <h2 class="cs-name">Eva Mařicová</h2>
                         <div class="cs-meta-grid">
                             <div class="cs-meta-row">
                                 <span class="cs-meta-key">Přišla s</span>
@@ -105,7 +113,7 @@
                     </div>
                     <div class="cs-text-col">
                         <span class="cs-tag">osobní styl &amp; šatník</span>
-                        <h3 class="cs-name">Petra – Krotitelka šatníku</h3>
+                        <h2 class="cs-name">Petra – Krotitelka šatníku</h2>
                         <div class="cs-meta-grid">
                             <div class="cs-meta-row">
                                 <span class="cs-meta-key">Přišla s</span>
@@ -136,7 +144,7 @@
                     </div>
                     <div class="cs-text-col">
                         <span class="cs-tag">fyzioterapie</span>
-                        <h3 class="cs-name">Jana Ondrušková</h3>
+                        <h2 class="cs-name">Jana Ondrušková</h2>
                         <div class="cs-meta-grid">
                             <div class="cs-meta-row">
                                 <span class="cs-meta-key">Přišla s</span>
@@ -167,7 +175,7 @@
                     </div>
                     <div class="cs-text-col">
                         <span class="cs-tag">estetická kosmetika &amp; vzdělávání</span>
-                        <h3 class="cs-name">Barbora Lacena</h3>
+                        <h2 class="cs-name">Barbora Lacena</h2>
                         <div class="cs-meta-grid">
                             <div class="cs-meta-row">
                                 <span class="cs-meta-key">Přišla s</span>
@@ -201,10 +209,13 @@
                 <p>Napište mi a&nbsp;podíváme se na to spolu.<br>Bez závazků, s&nbsp;konkrétním výstupem.</p>
                 <form class="cta-form" action="https://formspree.io/f/xwvrdayj" method="POST">
                     <div class="cta-form-row">
-                        <input type="text" name="jmeno" placeholder="Vaše jméno" required>
-                        <input type="email" name="email" placeholder="E-mail" required>
+                        <label class="sr-only" for="jmeno-cta">Vaše jméno</label>
+                        <input type="text" id="jmeno-cta" name="jmeno" placeholder="Vaše jméno" required>
+                        <label class="sr-only" for="email-cta">E-mail</label>
+                        <input type="email" id="email-cta" name="email" placeholder="E-mail" required>
                     </div>
-                    <textarea name="zprava" rows="4" placeholder="O čem si chcete popovídat?" required></textarea>
+                    <label class="sr-only" for="zprava-cta">O čem si chcete popovídat?</label>
+                    <textarea id="zprava-cta" name="zprava" rows="4" placeholder="O čem si chcete popovídat?" required></textarea>
                     <button type="submit" class="btn btn-light btn-lg cta-form-btn">Chci se domluvit</button>
                 </form>
                 <div class="cta-contact-meta">

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stránka nenalezena – Martina Vašnovská</title>
+    <meta name="robots" content="noindex, follow">
 
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.png?v=6">
 
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="style.css?v=20260323b">
 </head>
 <body class="light-bg" style="display: flex; flex-direction: column; min-height: 100vh;">
+    <a class="skip-link" href="#main-content">Přeskočit na obsah</a>
 
     <!-- HEADER -->
     <header>
@@ -34,13 +36,14 @@
                     <li><a href="reference.html">Reference</a></li>
                     <li><a href="omne.html">O mně</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li class="nav-cta-mobile"><a href="#kontakt" class="btn-nav-cta">Domluvit konzultaci</a></li>
                 </ul>
                 <a href="#kontakt" class="btn-nav-cta">Domluvit konzultaci</a>
             </nav>
         </div>
     </header>
 
-    <main style="flex: 1; display: flex; flex-direction: column;">
+    <main id="main-content" style="flex: 1; display: flex; flex-direction: column;">
         <section class="page-hero" style="text-align: center; flex: 1; display: flex; align-items: center;">
             <div class="container">
                 <h1 class="page-hero-title fade-in">Buď to funguje, nebo ne.</h1>
@@ -59,10 +62,13 @@
                 <p>Napište mi a&nbsp;podíváme se na to spolu.<br>Bez závazků, s&nbsp;konkrétním výstupem.</p>
                 <form class="cta-form" action="https://formspree.io/f/xwvrdayj" method="POST">
                     <div class="cta-form-row">
-                        <input type="text" name="jmeno" placeholder="Vaše jméno" required>
-                        <input type="email" name="email" placeholder="E-mail" required>
+                        <label class="sr-only" for="jmeno-cta">Vaše jméno</label>
+                        <input type="text" id="jmeno-cta" name="jmeno" placeholder="Vaše jméno" required>
+                        <label class="sr-only" for="email-cta">E-mail</label>
+                        <input type="email" id="email-cta" name="email" placeholder="E-mail" required>
                     </div>
-                    <textarea name="zprava" rows="4" placeholder="O čem si chcete popovídat?" required></textarea>
+                    <label class="sr-only" for="zprava-cta">O čem si chcete popovídat?</label>
+                    <textarea id="zprava-cta" name="zprava" rows="4" placeholder="O čem si chcete popovídat?" required></textarea>
                     <button type="submit" class="btn btn-light btn-lg cta-form-btn">Chci se domluvit</button>
                 </form>
                 <div class="cta-contact-meta">
