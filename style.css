@@ -174,12 +174,13 @@ h2.text-left { text-align: left; }
 
 /* --- SECONDARY outline --- */
 .btn-outline {
-  background-color: transparent;
+  background-color: var(--accent);
   border-color: var(--accent);
-  color: var(--accent);
+  color: #fff;
 }
 .btn-outline:hover {
-  background-color: var(--accent);
+  background-color: #C07B50;
+  border-color: #C07B50;
   color: #fff;
   transform: translateY(-2px);
 }
@@ -398,7 +399,7 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 15%;
   display: block;
 }
 
@@ -764,7 +765,7 @@ ul.check-list li i { flex-shrink: 0; margin-top: 0.25rem; font-size: 0.9rem; }
 .services-guidance {
   text-align: center;
   color: var(--heading-color);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
   font-family: var(--font-heading);
   margin: 0 auto 0;
@@ -1433,7 +1434,6 @@ footer a:hover { color: var(--accent); }
   gap: 0;
   margin-top: 3.5rem;
 }
-.omne-skill-col { display: flex; flex-direction: column; }
 .omne-skill-item {
   display: flex;
   gap: 1.5rem;
@@ -1449,9 +1449,9 @@ footer a:hover { color: var(--accent); }
   padding-top: 0.25rem;
   flex-shrink: 0;
 }
-.omne-skill-item h4 { font-size: 1.272rem; margin-bottom: 0.35rem; }
-.omne-skill-item p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin: 0; }
-.skill-tools { font-size: 0.78rem !important; color: var(--primary) !important; margin-top: 0.4rem !important; letter-spacing: 0.3px; }
+.omne-skill-item h4 { font-size: 1.4rem; margin-bottom: 0.35rem; }
+.omne-skill-item p { color: var(--text-muted); font-size: 1.067rem; line-height: 1.7; margin: 0; }
+.skill-tools { font-size: 0.93rem !important; color: var(--primary) !important; margin-top: 0.4rem !important; letter-spacing: 0.3px; }
 
 /* Personal */
 .omne-personal {
@@ -1501,7 +1501,8 @@ footer a:hover { color: var(--accent); }
   .omne-value-item h3, .omne-value-item p { grid-column: auto; }
   .omne-value-num { font-size: 3.5rem; opacity: 0.2; }
   .omne-skills-grid { grid-template-columns: 1fr 1fr; gap: 0 4rem; }
-  .omne-skill-col:first-child .omne-skill-item:last-child { border-bottom: 1px solid rgba(155,122,94,0.12); }
+  .omne-skill-item:nth-last-child(-n+2) { border-bottom: none; }
+  .omne-skill-item:nth-last-child(3) { border-bottom: 1px solid rgba(155,122,94,0.12); }
   .omne-personal { grid-template-columns: 45fr 55fr; gap: 6rem; }
   .omne-personal-photo img { height: auto; object-fit: fill; }
 }
@@ -1579,7 +1580,7 @@ footer a:hover { color: var(--accent); }
    ============================================================ */
 @media (min-width: 768px) {
   /* Hero */
-  .hero { flex-direction: row; min-height: 90vh; overflow: visible; position: static; }
+  .hero { flex-direction: row; min-height: 100vh; overflow: visible; position: static; }
   .hero-content {
     padding: 7rem 3rem 10rem 0;
     max-width: 48%;

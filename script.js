@@ -47,24 +47,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Lazy load observer, basic fade in scroll animation
+    // Fade-in scroll animation
     const fadeElements = document.querySelectorAll('.fade-in');
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
+                obs.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, {
+        root: null,
+        rootMargin: '0px 0px 120px 0px',
+        threshold: 0
+    });
 
-    fadeElements.forEach(el => observer.observe(el));
+    fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            el.classList.add('visible');
+        } else {
+            observer.observe(el);
+        }
+    });
 
     // Shrink header logo on scroll
     const header = document.querySelector('header');
