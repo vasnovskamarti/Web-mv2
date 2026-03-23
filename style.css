@@ -632,22 +632,12 @@ ul.check-list li i { flex-shrink: 0; margin-top: 0.25rem; font-size: 0.9rem; }
   color: var(--text);
   transition: var(--transition);
 }
-.sg-item:hover {
-  background: rgba(212,149,106,0.06);
-  border-color: rgba(212,149,106,0.4);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
-}
 .sg-item i { color: var(--accent); font-size: 1.45rem; flex-shrink: 0; }
 .sg-item--featured {
   background: rgba(212,149,106,0.08);
   border-color: rgba(212,149,106,0.38);
 }
 .sg-item--featured i { color: var(--primary-hover); }
-.sg-item--featured:hover {
-  background: rgba(212,149,106,0.14);
-  border-color: var(--accent);
-}
 .services-claim {
   font-family: var(--font-heading);
   font-size: clamp(1.2rem, 2.2vw, 1.55rem);
@@ -1252,6 +1242,65 @@ footer a:hover { color: var(--accent); }
 .footer-bottom p { color: rgba(42,26,10,0.45); margin: 0; }
 
 /* ============================================================
+   GDPR / Právní stránky
+   ============================================================ */
+
+.legal-content {
+  max-width: 760px;
+}
+
+.legal-content p,
+.legal-content li {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.legal-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-content ul li {
+  margin-bottom: 0.35rem;
+}
+
+.legal-content h2 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-content h3 {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-box {
+  background: var(--bg-highlight);
+  border-left: 3px solid var(--primary);
+  padding: 1.5rem 1.75rem;
+  border-radius: var(--radius);
+  margin: 1.75rem 0;
+}
+
+.legal-box p { margin-bottom: 0.4rem; }
+
+.legal-divider {
+  border: none;
+  border-top: 1px solid rgba(155,122,94,0.18);
+  margin: 2.5rem 0;
+}
+
+.legal-effective {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+/* ============================================================
    O mně — stránka
    ============================================================ */
 
@@ -1301,12 +1350,10 @@ footer a:hover { color: var(--accent); }
   margin-bottom: 1.25rem;
 }
 .omne-story-punch {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  color: var(--heading-color);
-  font-style: italic;
-  line-height: 1.6;
-  margin: 0.25rem 0 !important;
+  font-size: 1.08rem;
+  color: var(--text);
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
 }
 
 /* Values */
@@ -1559,6 +1606,29 @@ footer a:hover { color: var(--accent); }
 }
 
 /* ============================================================
+   Responsive — Tablet + Mobile nav (max 1023px)
+   ============================================================ */
+@media (max-width: 1023px) {
+  .logo img { height: 58px; }
+  .nav-links {
+    position: fixed;
+    top: 0; left: -100%; bottom: 0;
+    width: 80%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    padding: 5rem 2.5rem 2rem;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+    transition: left 0.3s ease;
+    gap: 0;
+    z-index: 999;
+  }
+  .nav-links li { border-bottom: 1px solid rgba(155,122,94,0.1); padding: 1rem 0; }
+  .nav-links.active { left: 0; }
+  .hamburger { display: block; }
+  .btn-nav-cta { display: none; }
+}
+
+/* ============================================================
    Responsive — Mobile max 767px
    ============================================================ */
 @media (max-width: 767px) {
@@ -1606,22 +1676,6 @@ footer a:hover { color: var(--accent); }
   .hero-btn-desktop { display: none; }
   .hero-btn-mobile { display: inline; }
 
-  .nav-links {
-    position: fixed;
-    top: 0; left: -100%; bottom: 0;
-    width: 80%;
-    background-color: var(--bg-color);
-    flex-direction: column;
-    padding: 5rem 2.5rem 2rem;
-    box-shadow: 4px 0 20px rgba(0,0,0,0.1);
-    transition: left 0.3s ease;
-    gap: 0;
-    z-index: 999;
-  }
-  .nav-links li { border-bottom: 1px solid rgba(155,122,94,0.1); padding: 1rem 0; }
-  .nav-links.active { left: 0; }
-  .hamburger { display: block; }
-  .btn-nav-cta { display: none; }
   .cta-form-row { grid-template-columns: 1fr; }
   .services-tiles { grid-template-columns: 1fr; }
 
