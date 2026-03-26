@@ -80,6 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Hero height: nastavíme --header-h dle skutečné výšky headeru
+    function updateHeaderHeight() {
+        if (header) document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+    }
+    updateHeaderHeight();
+    window.addEventListener('resize', updateHeaderHeight);
+
     // Formspree AJAX s vlastní hláškou po odeslání
     document.querySelectorAll('.cta-form').forEach(form => {
         form.addEventListener('submit', async function(e) {
