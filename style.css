@@ -429,13 +429,19 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 12%;
+  object-position: center 25%;
   display: block;
 }
 
 /* Hero dual text — mobile variants hidden by default */
 .hero-perex-mobile { display: none; }
 .hero-btn-mobile { display: none; }
+.hero-perex-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.7;
+}
 
 
 /* ============================================================
@@ -953,14 +959,16 @@ ul.check-list li i { flex-shrink: 0; margin-top: 0.25rem; font-size: 0.9rem; }
 .cs-ref-link:hover { color: var(--accent); gap: 0.75rem; }
 
 .ref-closing {
-  text-align: center;
-  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2.2vw, 1.618rem);
+  color: var(--primary);
   font-style: italic;
-  color: var(--heading-color);
-  margin: 3rem auto 1.5rem;
-  max-width: 540px;
-  line-height: 1.5;
-  opacity: 0.85;
+  line-height: 1.65;
+  margin: 3rem 0 1.5rem;
+  padding: 1.5rem 1.75rem 1.5rem 2rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(212, 149, 106, 0.06);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 /* ============================================================
@@ -1000,6 +1008,25 @@ ul.check-list li i { flex-shrink: 0; margin-top: 0.25rem; font-size: 0.9rem; }
   margin-bottom: 1.75rem;
 }
 .about-text p { color: var(--text); max-width: 52ch; }
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.about-list li {
+  color: var(--text);
+  padding-left: 1.25rem;
+  position: relative;
+}
+.about-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
 .about-statement {
   font-family: var(--font-heading);
   font-size: clamp(1.2rem, 2.2vw, 1.618rem);
@@ -1623,7 +1650,7 @@ footer a:hover { color: var(--accent); }
   .nav-cta-mobile { display: none; }
 
   /* Hero */
-  .hero-section { height: calc(100vh - var(--header-h, 94px)); overflow: hidden; }
+  .hero-section { height: calc(100svh - var(--header-h, 72px)); height: calc(100vh - var(--header-h, 72px)); overflow: hidden; }
   .hero { flex-direction: row; min-height: unset; height: 100%; overflow: hidden; position: static; }
   .hero-content {
     padding: 7rem 3rem 10rem 0;
@@ -1666,7 +1693,7 @@ footer a:hover { color: var(--accent); }
   /* Grids */
   .grid-2       { grid-template-columns: 1fr 1fr; }
   .start-cards  { grid-template-columns: 1fr 1fr; }
-  .values-grid  { grid-template-columns: 1fr 1fr 1fr; }
+  .values-grid  { grid-template-columns: 1fr 1fr; }
   .faq-grid     { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 4rem; }
@@ -1781,6 +1808,16 @@ footer a:hover { color: var(--accent); }
 
   .cta-form-row { grid-template-columns: 1fr; }
   .services-tiles { grid-template-columns: 1fr; }
+
+  /* O mně — fotky musí být celé vidět */
+  .omne-intro-photo img,
+  .omne-personal-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: unset;
+    display: block;
+    border-radius: var(--radius);
+  }
 
   .cs-image-col { min-height: 0; height: 100vw; max-height: 440px; order: 2; }
   .cs-text-col { order: 1; }

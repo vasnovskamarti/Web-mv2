@@ -1,4 +1,13 @@
+// Set --header-h CSS variable to actual header height
+function setHeaderHeight() {
+    const h = document.querySelector('header');
+    if (h) document.documentElement.style.setProperty('--header-h', h.offsetHeight + 'px');
+}
+setHeaderHeight();
+window.addEventListener('resize', setHeaderHeight);
+
 document.addEventListener('DOMContentLoaded', () => {
+    setHeaderHeight();
     // Hamburger menu
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');

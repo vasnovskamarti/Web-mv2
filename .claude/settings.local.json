@@ -8,7 +8,10 @@
       "Bash(python3 -c \"from PIL import Image; img = Image.open\\(''c:/VIBECODING WEBY/Martinavasnovska/Web mv2/Obrazky/hero.jpg''\\); print\\(img.size\\)\")",
       "Bash(python -c \"from PIL import Image; img = Image.open\\(''c:/VIBECODING WEBY/Martinavasnovska/Web mv2/Obrazky/hero.jpg''\\); print\\(img.size\\)\")",
       "Bash(identify \"c:/VIBECODING WEBY/Martinavasnovska/Web mv2/Obrazky/hero.jpg\")",
-      "Bash(powershell -command \"Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(''c:/VIBECODING WEBY/Martinavasnovska/Web mv2/Obrazky/hero.jpg''\\); Write-Host $img.Width $img.Height\")"
+      "Bash(powershell -command \"Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(''c:/VIBECODING WEBY/Martinavasnovska/Web mv2/Obrazky/hero.jpg''\\); Write-Host $img.Width $img.Height\")",
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \":*)",
+      "Bash(identify \"c:/VIBECODING WEBY/Martinavasnovska/Web mv2/Obrazky/omne4.jpg\" \"c:/VIBECODING WEBY/Martinavasnovska/Web mv2/Obrazky/omne2.jpg\")"
     ]
   }
 }
