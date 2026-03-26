@@ -1545,7 +1545,7 @@ footer a:hover { color: var(--accent); }
   .omne-skill-item:nth-last-child(-n+2) { border-bottom: none; }
   .omne-skill-item:nth-last-child(3) { border-bottom: 1px solid rgba(155,122,94,0.12); }
   .omne-personal { grid-template-columns: 45fr 55fr; gap: 6rem; }
-  .omne-personal-photo img { height: 560px; object-fit: cover; object-position: center top; }
+  .omne-personal-photo img { height: auto; object-fit: contain; }
 }
 
 /* ============================================================
