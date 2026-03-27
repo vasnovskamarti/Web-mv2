@@ -1696,7 +1696,6 @@ footer a:hover { color: var(--accent); }
   .grid-2       { grid-template-columns: 1fr 1fr; }
   .start-cards  { grid-template-columns: 1fr 1fr; }
   .values-grid  { grid-template-columns: 1fr 1fr; }
-  .services-section .values-grid { grid-template-columns: repeat(3, 1fr); }
   .faq-grid     { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 4rem; }
@@ -1716,6 +1715,13 @@ footer a:hover { color: var(--accent); }
   .about-layout { grid-template-columns: 55fr 45fr; gap: 6rem; }
   .about-photo img { height: 580px; }
 
+}
+
+/* ============================================================
+   Služby — 3 karty vedle sebe (1024px+)
+   ============================================================ */
+@media (min-width: 1024px) {
+  .services-section .values-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ============================================================
