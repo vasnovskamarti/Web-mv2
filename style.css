@@ -192,13 +192,13 @@ h2.text-left { text-align: left; }
 
 /* --- PRIMARY CTA — cream on dark background (final CTA banner) --- */
 .btn-light {
-  background-color: #F2E8DC;
-  color: var(--heading-color);
+  background-color: var(--accent);
+  color: #F2E8DC;
   border-color: transparent;
 }
 .btn-light:hover {
-  background-color: #fff;
-  color: var(--heading-color);
+  background-color: var(--primary);
+  color: #F2E8DC;
   transform: translateY(-2px);
 }
 
@@ -585,20 +585,20 @@ nav {
 .reseni-punch {
   font-family: var(--font-heading);
   font-size: clamp(1.75rem, 3.2vw, 2.618rem);
-  color: var(--accent);
+  color: #F2E8DC;
   line-height: 1.3;
   font-weight: 400;
   margin: 2rem 0 3rem;
 }
-/* reseni-btn: primary action on dark section bg — cream */
+/* reseni-btn: orange on dark bg */
 .reseni-btn {
-  background-color: #F2E8DC;
-  color: var(--heading-color);
+  background-color: var(--accent);
+  color: #F2E8DC;
   border-color: transparent;
 }
 .reseni-btn:hover {
-  background-color: #fff;
-  color: var(--heading-color);
+  background-color: var(--primary);
+  color: #F2E8DC;
 }
 
 /* ============================================================
