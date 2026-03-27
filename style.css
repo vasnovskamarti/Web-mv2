@@ -1,3 +1,4 @@
+/* build: 2026-03-27 */
 /* ============================================================
    CSS Variables
    ============================================================ */
@@ -1734,6 +1735,15 @@ footer a:hover { color: var(--accent); }
 }
 
 /* ============================================================
+   Hero — malý desktop monitor (768–1200px šířka)
+   ============================================================ */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .hero-content h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); }
+  .hero-image { width: 58%; }
+  .hero-img { object-position: center top; }
+}
+
+/* ============================================================
    Responsive — Tablet + Mobile nav (max 1023px)
    ============================================================ */
 @media (max-width: 1023px) {
@@ -1814,6 +1824,7 @@ footer a:hover { color: var(--accent); }
   /* Dual text — mobil */
   .hero-perex-desktop { display: none; }
   .hero-perex-mobile { display: block; }
+  .hero-perex-mobile:not(.hero-perex-sub) { margin-bottom: 0.5rem; }
   .hero-btn-desktop { display: none; }
   .hero-btn-mobile { display: inline; }
 
