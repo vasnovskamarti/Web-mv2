@@ -1696,6 +1696,7 @@ footer a:hover { color: var(--accent); }
   .grid-2       { grid-template-columns: 1fr 1fr; }
   .start-cards  { grid-template-columns: 1fr 1fr; }
   .values-grid  { grid-template-columns: 1fr 1fr; }
+  .services-section .values-grid { grid-template-columns: repeat(3, 1fr); }
   .faq-grid     { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 4rem; }
@@ -1830,6 +1831,12 @@ footer a:hover { color: var(--accent); }
 
   .cta-form-row { grid-template-columns: 1fr; }
   .services-tiles { grid-template-columns: 1fr; }
+
+  .ref-closing {
+    font-size: 1.1rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+    margin: 2.5rem auto 1.5rem;
+  }
 
   /* O mně — fotky musí být celé vidět */
   .omne-intro-photo img,
