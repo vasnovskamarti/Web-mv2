@@ -964,11 +964,12 @@ ul.check-list li i { flex-shrink: 0; margin-top: 0.25rem; font-size: 0.9rem; }
   color: var(--primary);
   font-style: italic;
   line-height: 1.65;
-  margin: 3rem 0 1.5rem;
+  margin: 3rem auto 1.5rem;
   padding: 1.5rem 1.75rem 1.5rem 2rem;
   border-left: 3px solid var(--accent);
-  background: rgba(212, 149, 106, 0.06);
+  background: rgba(212, 149, 106, 0.08);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  max-width: 680px;
 }
 
 /* ============================================================
