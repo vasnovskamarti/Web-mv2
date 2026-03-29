@@ -402,7 +402,7 @@ nav {
 }
 
 .hero-content h1 {
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 6.5vw, 5.2rem);
   font-weight: 700;
   line-height: 1.05;
   margin-bottom: 1.75rem;
@@ -1832,6 +1832,7 @@ footer a:hover { color: var(--accent); }
   .hero-perex-desktop { display: none; }
   .hero-perex-mobile { display: block; }
   .hero-perex-mobile:not(.hero-perex-sub) { margin-bottom: 0.5rem; }
+  .hero-perex-mobile.hero-perex-sub { margin-top: 1.25rem; }
   .hero-btn-desktop { display: none; }
   .hero-btn-mobile { display: inline; }
 
